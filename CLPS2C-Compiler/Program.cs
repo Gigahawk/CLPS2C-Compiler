@@ -92,7 +92,8 @@ namespace CLPS2C_Compiler
             {
                 if (OutputLines[0].StartsWith(_newLine))
                 {
-                    OutputLines[0] = OutputLines[0].Substring(2);
+                    ConsolePrintError("OUTPUTLINES STARTS WITH NEWLINE\n");
+                    //OutputLines[0] = OutputLines[0].Substring(2);
                 }
                 Output += string.Join("", OutputLines);
 
